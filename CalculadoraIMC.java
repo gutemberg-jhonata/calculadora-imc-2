@@ -4,14 +4,14 @@ class CalculadoraIMC {
     public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite seu sexo (M ou F): ");
-        String sexo = scanner.nextLine();
+        final String sexo = scanner.nextLine();
         System.out.print("Digite seu peso: ");
-        double peso = scanner.nextDouble();
+        final double peso = scanner.nextDouble();
         System.out.print("Digite sua altura: ");
-        double altura = scanner.nextDouble();
+        final double altura = scanner.nextDouble();
         scanner.close();
 
-        double imc = peso/(altura*altura);
+        final double imc = peso/(altura*altura);
        
         if (sexo == "F") {
             if (imc < 19.1) {
