@@ -9,6 +9,8 @@ class CalculadoraIMC {
         double peso = scanner.nextDouble();
         System.out.print("Digite sua altura: ");
         double altura = scanner.nextDouble();
+        scanner.close();
+
         double imc = peso/(altura*altura);
        
         if (sexo == "F") {
